@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="100 100 824 824">
+  <!-- Source for `pnpm tauri icon icons/app-icon.svg` (regenerates every platform icon).
+       Anodised charcoal plate on Apple's 824px grid; the mark is traced from the original logo. -->
+  <defs>
+    <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#34373c"/>
+      <stop offset="1" stop-color="#141517"/>
+    </linearGradient>
+    <radialGradient id="sheen" cx="0.5" cy="0" r="0.9">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.22"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0.04"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="drop" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="lift" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <clipPath id="tail"><polygon points="793.9,-667.5 -212.7,1060.7 -1076.8,557.4 -70.2,-1170.8"/></clipPath>
+    <mask id="cut" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+      <rect width="512" height="512" fill="#fff"/>
+      <circle cx="221.4" cy="315.4" r="104"/>
+      <circle cx="221.4" cy="315.4" r="181" clip-path="url(#tail)"/>
+    </mask>
+  </defs>
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#plate)" filter="url(#drop)"/>
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#sheen)"/>
+  <rect x="102" y="102" width="820" height="820" rx="183" fill="none" stroke="url(#edge)" stroke-width="4"/>
+  <g transform="translate(512 512) scale(1.3) translate(-256 -256)" filter="url(#lift)">
+    <g fill="#f23847"><path fill-rule="evenodd" d="M139.6,196.6a151,151 0 1,0 302,0a151,151 0 1,0 -302,0ZM185.6,196.6a105,105 0 1,0 210,0a105,105 0 1,0 -210,0Z" mask="url(#cut)"/><circle cx="290.6" cy="196.6" r="40"/></g>
+    <g fill="#4fa3d9" transform="rotate(180 256 256)"><path fill-rule="evenodd" d="M139.6,196.6a151,151 0 1,0 302,0a151,151 0 1,0 -302,0ZM185.6,196.6a105,105 0 1,0 210,0a105,105 0 1,0 -210,0Z" mask="url(#cut)"/><circle cx="290.6" cy="196.6" r="40"/></g>
+  </g>
+</svg>
